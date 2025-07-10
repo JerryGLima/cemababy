@@ -75,6 +75,17 @@ body {
     padding: 0 var(--spacing-md);
 }
 
+/* Correção para o Header Fixo */
+section[id] {
+    scroll-margin-top: 80px; /* Ajuste este valor se a altura do header mudar */
+}
+
+@media (max-width: 768px) {
+    section[id] {
+        scroll-margin-top: 70px; /* Altura do header mobile */
+    }
+}
+
 /* Header */
 .header {
     position: fixed;
@@ -1265,4 +1276,5 @@ body {
         max-width: 100%;
     }
 }
+
 
